@@ -3,14 +3,14 @@
   "author": {
     "name": "junaidkhan1"
   },
-  "contributors": ["Courtney Watts"],
+  "contributors": [
+    "Courtney Watts"
+  ],
   "main": "./build/index.js",
   "module": "./build/index.es.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
-  "dependencies": {
-   
-  },
+  "dependencies": {},
   "scripts": {
     "test": "react-scripts test",
     "storybook": "start-storybook -p 6006 -s public",
