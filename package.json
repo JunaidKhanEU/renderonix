@@ -10,12 +10,15 @@
   "module": "./build/index.es.js",
   "version": "0.0.4",
   "private": false,
+  "license": "MIT",
   "dependencies": {},
   "scripts": {
     "test": "react-scripts test",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "build": "rollup -c"
+    "storybook-serve": "npx http-server public",
+    "build": "rollup -c",
+    "deploy-static": "chromatic"
   },
   "eslintConfig": {
     "extends": [
@@ -55,10 +58,6 @@
     "@storybook/node-logger": "^6.3.6",
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.3.6",
-    "postcss": "^8.3.6",
-    "rollup": "^2.54.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-postcss": "^4.0.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -66,9 +65,14 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "chromatic": "^5.10.0-canary.0",
+    "postcss": "^8.3.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "rollup": "^2.54.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.0",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
